@@ -1,0 +1,189 @@
+/* big tablet to 1200px:from 768 to 1023px*/
+@media only screen and (max-width: 1200px){
+	
+	.hero-text-box{
+	
+	   width: 100%;
+		padding: 0 2%;
+	
+	}
+	.row{
+		
+		padding: 0 2%;
+	}
+}
+
+
+/* small tablet to big tablet:from 768 to 1023px*/
+@media only screen and (max-width: 1023px){
+	body { font-size: 18px; }
+	section { padding: 60px 0; }
+	
+	.long-copy{
+	    width: 80%;
+		margin-left: 10%;
+	
+	}
+	
+	.steps-box { margin-top: 10px; }
+	.works-step{margin-bottom: 40px; }
+	.works-step:last-of-type{margin-bottom: 60px;}
+	.steps-box:last-child {margin-top: 10px;}
+	.icon-small{
+		margin-right: 5px;
+		width: 17px;}
+	.city-feature{font-size: 90%;}
+	.contact-form{width: 80%;}
+	
+	     
+	
+}
+
+
+/* small phones to tablet:from 481 to 767px*/
+@media only screen and (max-width: 767px){
+	body { font-size: 16px; }
+	section { padding: 30px 0; }
+	
+	.row,
+	.hero-text-box { padding: 0 4%; }
+	
+	.col { 
+		width: 100%;
+		margin: 0 0 4% 0;
+	      }
+	
+	.main-nav {
+		display: none;
+	}
+	
+	.main-nav li{ 
+		
+	    display: block;
+		
+	}
+	
+	.main-nav li a:link,
+    .main-nav li a:visited{
+	
+		 display: block;
+		 border: 0;
+		 padding: 3px 0;
+	}
+	.main-nav{
+		float: left;
+		margin-top: 5px;
+		margin-left: 20px;
+		font-size: 100%;
+	}
+	
+	
+	.sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { 
+		padding: 10px 0;
+		
+	}
+	
+    .sticky .mobile-nav-icon { margin-top: 30px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+	
+	.mobile-nav-icon {
+		
+		display: inline-block;
+		
+	}
+	
+	h4{font-size: 180%;}
+	h1{font-size: 180%;}
+	h2{font-size: 150%;}
+	
+	.long-copy{
+	    width: 100%;
+		margin-left: 0%;
+	
+	}
+	
+	
+	.steps-box:first-child {
+	
+	text-align: center;
+		
+	
+	}
+	
+		.steps-box:second-child {
+	
+	text-align: center;
+	
+	}
+	
+	.works-step div{
+	
+		height: 20px;
+		width: 20px;
+		text-align: center;
+
+		margin-right: 15px;
+	    font-size: 80%;
+	
+	
+}
+	
+
+	.works-step { margin-bottom: 20px; }
+	.works-step:last-of-type { margin-bottom: 20px; }
+	
+	
+	.section-cities{
+	
+	text-align: center; 
+}
+
+
+.Emcee {
+	
+    margin-left: 90px;
+}
+
+	
+
+	
+}
+
+
+
+
+
+/* small phones:from 0 to 480px*/
+@media only screen and (max-width: 480px){
+	
+	section { padding: 25px 0; }
+	.contact-form{width: 100%;}
+	
+	
+	.Emcee{
+	
+	width: 100%;
+	margin-left: 5px;
+	border: 20px solid white;
+	box-shadow: 0px 0px 5px 2px #d1d81f;
+}
+	
+	.event-box3{
+	
+	border: 2px solid #d1d81f;
+    margin-left: 5px;
+	margin-right: 5px;
+	padding: 25px;
+	font-size: 80%;
+	font-weight: 400;
+}
+	
+	.logo{
+		
+		margin-bottom: 10px;
+	}
+	
+	
+	
+}

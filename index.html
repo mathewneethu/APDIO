@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+	  
+	  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+	  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+	  <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+	  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+	    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	  
+	  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	  
+	 <style type="text/css">
+		/*img{
+			  
+			  width: 100%;
+			  height: 460px;
+			 
+		  }
+		  #slider{
+			  
+			  width: 700px;
+			  height: 500px;
+			
+			  position: relative;
+			  border: 20px solid white;
+			  box-shadow: 0px 0px 5px 2px #d1d81f;
+			  margin-left: 215px;
+			  margin-right: 20px;
+				  
+		  }
+		  button{
+			  padding: 20px;
+			  border: none;
+			  background: #484644;
+			  font-size: 30px;
+			  color: #d1d81f;
+			  position: absolute;
+			  top: 40%;
+			  cursor: pointer;
+		  }
+		  
+		  .next {
+			  
+			  border-radius: 10px 0px 0px 10px;
+			  margin-left: 605px;
+		  }
+		  
+		  .prew { 
+			  border-radius: 0px 10px 10px 0px;
+		  }*/
+		#slider
+		 {
+			  border: 20px solid white;
+			  box-shadow: 0px 0px 5px 2px #d1d81f;
+		      overflow: hidden;
+		 }
+		#slider figure 
+		 {
+			position: relative;
+			width: 1000%; /* 100% for each picture, 10 pictures = 1000% */
+			margin: 0;
+			left: 0;
+			animation: 30s slider infinite;
+		 }
+			#slider figure img 
+		 {
+				width: 10%; /* 100 / 10 pictures = 10% */
+				height: 400px; /* to set a maximum height  */
+				float: left;
+				/*  next 2 to continue responsive with the maximum height  */
+				max-width: 100%;
+				min-height: 100%;
+				object-fit: cover;
+		 }
+		 
+		@keyframes slider {
+		0% { left: 0; } /* you must divide 100% fot the amout of images you have */
+		7% { left: 0%; } /* these intermediate steps (7%, 17%, 27%, ... will make the transition speed faster */
+		10% { left: -100%; } /* because my total width: 1000% (10x 100% for 10 images), I will use 10% for each image */
+		17% { left: -100%; }
+		20% { left: -200%; }
+		27% { left: -200%; }
+		30% { left: -300%; }
+		37% { left: -300%; }
+		40% { left: -400%; }
+		47% { left: -400%; }
+		50% { left: -500%; }
+		57% { left: -500%; }
+		60% { left: -600%; }
+		67% { left: -600%; }
+		70% { left: -700%; }
+		77% { left: -700%; }
+		80% { left: -800%; }
+		87% { left: -800%; }
+		90% { left: -900%; }
+		100% { left: -900%; }
+}
+	  </style>
+	  <title>APDIO</title>
+	  
+	    <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/resources/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/resources/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/resources/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/resources/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/resources/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon-180x180.png">
+	  
+  </head>
+  <body>
+	  <header>
+		     <nav class="sticky">
+		 <!-- <nav>-->
+		      <div class="row">
+		 <img src="resources/img/logo.png" alt="APDIO Logo" class="logo">
+			  
+			    <ul class="main-nav js--main-nav">
+				  <li><a href="#features">HOME</a></li>
+				  <li><a href="#Events">EVENTS</a></li>
+				  <li><a href="#Celebrations">CELEBRATIONS</a></li>
+				  <li><a href="#Team">TEAM</a></li>
+				  <li><a href="resources/img/APDIO%20MembershipForm.pdf"  target="_blank">BECOME A MEMBER</a></li>
+				  <li><a href="#Contact">CONTACT</a></li>
+			   </ul>
+				  <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+			  </div>
+			  
+		  </nav>
+		  
+		   <div class="head-main-box">
+	            <div class="hero-text-box">
+					<div class="row">
+					<!--<h4>APDIO</h4>-->
+						<h4>
+						    <span>A</span>
+							<span>P</span>
+							<span>D</span>
+							<span>I</span>
+							<span>O</span>
+						</h4>
+					</div>
+					<div class="row">
+			        <h1>ASSOCIATION OF PROFESSIONAL DRIVING INSTRUCTORS OF ONTARIO</h1>
+					</div>
+			      <!--<a class="btn btn-full" href="">I’m hungry</a>
+			      <a class="btn btn-ghost" href="">Show me more</a>-->
+		        </div>
+			   </div>
+		  
+	  </header>
+	  
+	    <section class="section-features js--section--home" id="features" >
+		  <div class="row">
+			 
+		  <h2>About us</h2>
+		  <p class="long-copy">
+			  The purpose of the association is to provide to its members qualified opportunities designed to enhance their professional development, continuing education, peer to peer networking, and membership benefits in order to improve services to our respective clientele. Membership benefits will include bi-annual seminars for professional development, professional-liability-group-insurance-plan(packages-which includes drug dental business-income loss, etc), holding annual DIQuest/DIExpo ( to allow promotion of different stakeholders- auto manufacturers, insurance provider, auto -service industry-accountants- community colleges/driving schools) and an effective lobbying group to represent Driving Instructors interest at different levels of governance add various stakeholders in the driving industry.
+		  </p>
+		  </div>
+	  
+		
+	  </section>
+	  
+
+	  
+	   <section class="section-events js--section--events" id="Events">
+		     <div class="row">
+			<h2>Upcoming Events</h2>
+				  <div class="row">
+					       
+					 
+					     <div class="col span-1-of-2 box">
+							
+							       <div class="event-box1">
+									    <h5 class="FirstH5">APDIO 1st Annual Meet &amp; Greet Dinner</h5>
+									       <p class="event-copy">
+											   Please be our Guest of Honour on Friday, November 29, 2019, starting at 6:30 – 11:30pm. Again, the Speranza Banquet Hall, 510 Deerhurst Dr., Brampton, Ontario L6T 5H9, will host this friendship evening. The cost is $40.00 per guest, which covers your 3 course dinner. APDIO has also extended this invitation to several Ontario and Local government officials with whom we have had contact with during the last year.
+										   </p>
+									   <div class="clickHereLink1">
+									   <a href="https://www.cognitoforms.com/APDIO1/AssociationOfProfessionalDrivingInstructorsOfOntarioAPDIOUnityIsPowerRegistrationFormNovember292019Gen">Click Here</a>
+									  </div>
+								   </div>
+						   </div>
+					  <div class="col span-1-of-2 box">
+						 
+							       <div class="event-box2">
+									    <h5 class="SecondH5">APDIO Driving Instructor Service Award Nomination Form</h5>
+									       <p class="event-copy">
+											  APDIO would like to recognize Driving Instructors who have served the Ontario driving industry for 50 or more years and Driving Instructors who have served the driving industry for a minimum of 25 years, at our Annual General Meeting. Any Driving Instructor, including yourself, or Driving School owner, may be nominated. The deadline for this nomination is Friday, November 15th, 2019. Location: Speranza Garden 510 Deerhurst Dr., Brampton ON L6T 5H9 Date: November 29, 2019 @ 6:30 pm to 11:30 pm (doors open at 6:00 pm).
+										   </p>
+									    <div class="clickHereLink2">
+									    <a href="https://www.cognitoforms.com/APDIO1/APDIODrivingInstructorServiceAwardNominationForm" >Click Here</a>
+											 </div>
+								   </div>
+						   </div>
+					  </div>
+					  <div class="row">
+					       <div class="event-box3">
+							    <h5 class="ThirdH5">Emcee Of APDIO 1st Annual Meet & Greet November 29, 2019</h5>
+							    <img class="Emcee" src="resources/img/Teresa%20Kruze.jpg" alt="Korean bibimbap with egg and vegetables">
+							      <div class="Kruze">
+									  Teresa Kruze
+							      </div>
+							   <p class="event-copy">
+								<b>Teresa Kruze (TSN, CP24, City-TV, YesTV, 680News, Metro News and Chatelaine Magazine) is a long-time Broadcaster, TV Producer, Best-selling Author and Community Activist.</b>
+							   </p>
+							   
+							    <div class="row">
+							   <p class="event-copy">
+								 
+								   Kruze is well known for the fourteen years she spent at TSN – The Sports Network where she pioneered and broke new ground for future female sportscasters. Joining TSN in 1986, she covered numerous high-profile sporting events like the Olympics, World Series, Stanley Cup Finals and World Championships.
+									   
+							   </p>
+									</div>
+						  <div class="row">
+							   <p class="event-copy">
+								   Over the years, she has produced and hosted several talk shows including a lifestyle series for the Biography Channel called, “Changing Lives” and a health and wellness show for YesTV. Her most recent documentary detailed the life of her late brother-in-law for CityTV and OMNI called, “Voice of Courage – The Martin Arnold Kruze Story”. The critically acclaimed documentary has been honoured as a historical and educational resource in the area of child abuse and awareness.
+							   </p>
+						  </div>
+							   <div class="row">
+							   <p class="event-copy">
+								   In 2013, Kruze wrote a book on entrepreneurship featuring thirty of Canada’s top entrepreneurs. “The In-Credibility Factor” became a number one best-seller on Amazon.com, a position it held for three straight days. For the last several years Kruze has traveled across Canada speaking about Entrepreneurship to various business groups and organizations.
+							   </p>
+								   </div>
+							   <div class="row">
+							   <p class="event-copy">
+								   For over twenty years, Kruze has volunteered with, Abuse Hurts (formerly the Canadian Centre for Abuse Awareness) and is currently working on legislative and policy reform to help new mothers in crisis.
+							  </p>
+								   </div>
+								    </div>
+						   </div>
+					  
+				 </div>
+		   
+	  </section>
+	  
+	  <section class="section-steps" id="Celebrations">
+		 
+		  <div class="row">
+			<h2>CELEBRATIONS AT APDIO</h2>
+		   </div>
+          <div class="row">
+		      <div id="slider">
+			  <figure>
+				 	<img src="resources/img/41.jpg">
+				  	<img src="resources/img/2.jpg">
+				  	<img src="resources/img/3.jpg">
+				  	<img src="resources/img/4.jpg">
+				    <img src="resources/img/5.jpg">
+				    <img src="resources/img/6.jpg">
+				    <img src="resources/img/7.jpg">
+				    <img src="resources/img/8.jpg">
+				    <img src="resources/img/9.jpg">
+				    <img src="resources/img/10.jpg">
+				   
+			  </figure>
+			  </div>
+		  
+		  </div>
+	  </section>
+	  
+	  <section class="section-cities" id="Team">
+	    <div class="row">
+			  <h2>Meet the team</h2>
+		  </div>
+		      <div class="row">
+				  <div class="row">
+				  <div class="col span-1-of-4 box">
+					  <img src="resources/img/female.jpg" alt="PRITI LAMBA">
+					  <h3>priti lamba</h3>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+				
+				  </div>
+				  
+				  <div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="BOB  KARMAKAR">
+					  <h3>BOB  KARMAKAR</h3>
+					  <div class="city-feature">
+					     <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					   2262240800
+					  </div>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+					
+				  </div>
+				  
+				  <div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="JOHN  BABOOLA">
+					  <h3>JOHN  BABOOLA</h3>
+					  <div class="city-feature">
+					    <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					     email@domain.com
+					  </div>
+					
+				  </div>
+				  
+				  
+				  <div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="SAM  CHONG">
+					  <h3>SAM  CHONG</h3>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					  <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+				
+				  </div>
+				  
+		        </div>
+				   <div class="row">
+					    <div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="Umar Malik">
+					  <h3>Umar Malik</h3>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					    <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+					
+				  </div>
+				  
+				  <div class="col span-1-of-4 box">
+					  <img src="resources/img/female.jpg" alt="Neelam Sharma">
+					  <h3>Neelam Sharma</h3>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					   2262240800
+					  </div>
+					  <div class="city-feature">
+					    <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+					
+				  </div>
+				  
+				  <div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="Safique Malik">
+					  <h3>Safique Malik</h3>
+					  <div class="city-feature">
+					     <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					  <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					     email@domain.com
+					  </div>
+					
+				  </div>
+				  
+				  
+				  <div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="Sam Adewale">
+					  <h3>Sam Adewale</h3>
+					  <div class="city-feature">
+					    <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+					
+				  </div>
+				  </div>
+				  <div class="row">
+					<div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="Rajeev Kalia">
+					  <h3>Rajeev Kalia</h3>
+					  <div class="city-feature">
+					    <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					    <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+					
+				     </div>
+					  <div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="Rizwan Malik">
+					  <h3>Rizwan Malik</h3>
+					  <div class="city-feature">
+					    <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+					
+				    </div>
+					  
+					   <div class="col span-1-of-4 box">
+					  <img src="resources/img/male.jpg" alt="Ashok Sharma">
+					  <h3>Ashok Sharma</h3>
+					  <div class="city-feature">
+					    <i class="icon-small"><ion-icon name="phone-portrait"></ion-icon></i>
+					    2262240800
+					  </div>
+					  <div class="city-feature">
+					   <i class="icon-small"><ion-icon name="mail"></ion-icon></i>
+					    email@domain.com
+					  </div>
+					
+				    </div>
+				  </div>
+			  </div>
+	  </section>
+	  
+
+	  
+	  <section class="section-form" id="Contact">
+	     <div class="row">
+			 <h2>We're happy to hear from you</h2>
+		 </div>
+		   <div class="row">
+			   <form method="post" action="mailto:apdioassociation@gmail.com" class="contact-form">
+			       <div class="row">
+					     <div class="col span-1-of-3">
+							 <label for="name">Name</label>
+						 </div>
+					     <div class="col span-2-of-3">
+							 <input type="text" name="name" id="name" placeholder="Your Name" required>
+						 </div>
+					   
+				   </div>
+				   
+				   
+				   <div class="row">
+					     <div class="col span-1-of-3">
+							 <label for="email">Email</label>
+						 </div>
+					     <div class="col span-2-of-3">
+							 <input type="email" name="email" id="email" placeholder="Your email" required>
+						 </div>
+					   
+				   </div>
+				   
+		
+				   
+				    <div class="row">
+					     <div class="col span-1-of-3">
+							 <label for="name">Subject</label>
+						 </div>
+					     <div class="col span-2-of-3">
+							 <input type="text" name="subject" id="name" placeholder="Subject" required>
+						 </div>
+					   
+				   </div>
+				   
+				   
+				   
+				    <div class="row">
+					     <div class="col span-1-of-3">
+							 <label>Drop us a line</label>
+						 </div>
+					     <div class="col span-2-of-3">
+							 <textarea name="message" id="message" placeholder="Your Message"></textarea>
+						 </div>
+					   
+				   </div>
+				   
+				   
+				    <div class="row">
+					     <div class="col span-1-of-3">
+							 <label>&nbsp;</label>
+						 </div>
+					     <div class="col span-2-of-3">
+							<input type="submit"  value="Send it!">
+						 </div>
+					   
+				   </div>
+				   
+				   
+			   </form>
+		   </div>
+	  </section>
+	  
+	  	  
+	  <section class="section-plans">
+	      <div class="row">
+			  <h2>Location &amp; other documents</h2>
+		  </div>
+		  
+			  <div class="row">
+			  <div class="col span-1-of-2 steps-box">
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.161210202235!2d-79.5248569844978!3d43.79026777911689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2fb6ccad9a5d%3A0x4df7443e311651a3!2s7581%20Jane%20St%20%23202%2C%20Concord%2C%20ON%20L4K%201X3!5e0!3m2!1sen!2sca!4v1572052540416!5m2!1sen!2sca" frameborder="0" style="border:0; width: 100%; height: 500px;" allowfullscreen></iframe>
+				  
+				  <div class="contacts">
+				  <div class="row">
+                  <i class="ion-ios-location contacts-icon"></i>
+                  <p><a href="https://goo.gl/maps/9b6jQukVAzRKZJa9A">7581 Jane St. Unit 202 Concord Ontario L4K 1X3</a></p>
+                  </div>
+				  
+                  <div class="row">
+                  <i class="ion-ios-email contacts-icon"></i>
+                  <p><a href="mailto:apdioassociation@gmail.com" target="_top">apdioassociation@gmail.com</a></p>
+                  </div>
+					  
+				  <div class="row">
+                  <i class="ion-ios-telephone contacts-icon"></i>
+                   <p><a href="tel:4164186263">Preeti: (416) 418-6263</a></p>
+                  </div>	  
+					  
+				  <div class="row">
+                  <i class="ion-ios-telephone contacts-icon"></i>
+                   <p><a href="tel:4168738872">Sam: (416) 873-8872</a></p>
+                  </div>	
+					  
+				  </div>
+			  </div>
+			  <div class="col span-1-of-2 steps-box">
+				  <div class="law">
+				  <ul>
+				  <div class="works-step">
+					  <div>1</div>
+					  <li><a href="resources/img/APDIO%20By-Laws.pdf" target="_blank">By Laws</a></li>
+				  </div>
+				  <div class="works-step">
+					  <div>2</div>
+					 <li><a href="resources/img/APDIO%20Professional%20Development.pdf" target="_blank">Professional Development</a></li>
+				  </div>
+				  <div class="works-step">
+					  <div>3</div>
+					  <li><a href="resources/img/Directory%20Driving%20Schools%20Ontario.pdf" target="_blank">Directory Driving Schools Ontario</a></li>
+				  </div>
+				  
+				   <div class="works-step">
+					  <div>4</div>
+					 <li><a href="resources/img/APDIO%20Code%20of%20Ethics.pdf" target="_blank">Code Of Ethics</a></li>
+				  </div>
+				  
+				   <div class="works-step">
+					  <div>5</div>
+					<li><a href="resources/img/APDIO%20Privacy%20Policy.pdf" target="_blank">Privacy policy</a></li>
+				  </div>
+				   </ul>
+				
+			  </div>
+			
+				
+		  </div>
+			   
+		   </div>
+	  </section>
+	  
+	 
+	  <footer>
+	       <div class="row">
+			       <div class="col span-1-of-2">
+					   <ul class="footer-nav">
+						   <li><a href="#">About us</a></li>
+						   <li><a href="#">Blog</a></li>
+						   <li><a href="#">Press</a></li>
+						   <li><a href="#">iOS App</a></li>
+						   <li><a href="#">Android App</a></li>
+					   </ul>
+				   </div>
+			   
+			       <div class="col span-1-of-2">
+					   <ul class="social-links">
+					       <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+						   <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+						   <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+						   <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+					   </ul>
+				   </div>
+		   </div>
+		  <div class="row">
+			  <p>
+			 Copyright &copy; 2020 by APDIO. All rights reserved. Developed by <a href="https://www.linkedin.com/in/neethu-mathew-SD437/" target="_blank">Neethu Mathew</a>
+			  </p>
+		  </div>
+		  
+	  </footer>
+	  
+  </body>	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	 <script src="resources/js/script.js"></script>
+	
+
+	
+</html>
+
+
+ 	
+
